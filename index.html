@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>CV - Enzo Andrea Asplanatti</title>
+    <meta name="description" content="CV profesional de Enzo Andrea Asplanatti - Backend / Full Stack Trainee" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="toolbar" aria-label="Herramientas del CV">
+      <div>
+        <strong>CV Enzo Asplanatti</strong>
+        <span>HTML/CSS listo para PDF y GitHub Pages</span>
+      </div>
+      <div class="toolbar-actions">
+        <button id="langToggle" type="button">EN</button>
+        <button id="printButton" type="button">Exportar PDF</button>
+      </div>
+    </div>
+
+    <main class="page" id="cv">
+      <section class="hero">
+        <div class="hero-main">
+          <p class="eyebrow" data-i18n="eyebrow">Curriculum Vitae</p>
+          <h1>Enzo Andrea Asplanatti</h1>
+          <h2 data-i18n="headline">Estudiante avanzado de Ingeniería Informática | Backend / Full Stack Trainee</h2>
+        </div>
+        <div class="contact-card" aria-label="Datos de contacto">
+          <a href="tel:+5491125402106">+54 9 11 2540-2106</a>
+          <a href="mailto:enzoandreaasplanatti@gmail.com">enzoandreaasplanatti@gmail.com</a>
+          <span>CABA, Buenos Aires, Argentina</span>
+          <span>LinkedIn: Enzo Asplanatti</span>
+          <span>GitHub: EnzoAsplanatti</span>
+        </div>
+      </section>
+
+      <section class="content-grid">
+        <aside class="sidebar">
+          <article class="panel profile-panel">
+            <h3 data-i18n="profileTitle">Perfil</h3>
+            <p data-i18n="profileText">
+              Estudiante avanzado de Ingeniería Informática en UADE, cursando el último año de la carrera, con 43 de 52 materias aprobadas. Perfil orientado a backend y desarrollo full stack, con experiencia académica y freelance en APIs REST, bases de datos, seguridad, autenticación y arquitecturas event-driven.
+            </p>
+          </article>
+
+          <article class="panel">
+            <h3 data-i18n="techTitle">Tecnologías</h3>
+            <div class="tag-cloud" id="techTags">
+              <span class="tag">Java</span><span class="tag">Spring Boot</span><span class="tag">Spring Security</span><span class="tag">JWT</span><span class="tag">REST APIs</span><span class="tag">Maven</span><span class="tag">JPA/Hibernate</span><span class="tag">MySQL</span><span class="tag">SQL</span><span class="tag">React</span><span class="tag">React Native</span><span class="tag">Expo</span><span class="tag">TypeScript</span><span class="tag">JavaScript</span><span class="tag">Tailwind CSS</span><span class="tag">Kafka</span><span class="tag">Keycloak</span><span class="tag">Git</span><span class="tag">GitHub</span><span class="tag">Docker básico</span><span class="tag">Insomnia/Postman</span><span class="tag">Trello/Kanban</span><span class="tag">Render</span><span class="tag">Hostinger VPS</span>
+            </div>
+          </article>
+
+          <article class="panel compact-panel">
+            <h3 data-i18n="languagesTitle">Idiomas</h3>
+            <ul class="clean-list" id="languagesList">
+              <li>Español nativo.</li>
+              <li>Inglés B2 - Cambridge First Certificate in English, FCE, aprobado en 2023.</li>
+            </ul>
+          </article>
+
+          <article class="panel compact-panel">
+            <h3 data-i18n="skillsTitle">Competencias</h3>
+            <ul class="clean-list two-col" id="skillsList">
+              <li>Resolución de problemas</li><li>Trabajo en equipo</li><li>Comunicación</li><li>Liderazgo</li><li>Aprendizaje rápido</li><li>Pensamiento analítico</li><li>Autonomía</li><li>Investigación</li>
+            </ul>
+          </article>
+        </aside>
+
+        <section class="main-column">
+          <article class="section-block education-block">
+            <div class="section-heading">
+              <span class="section-kicker" data-i18n="educationKicker">Formación</span>
+              <h3 data-i18n="educationTitle">Educación</h3>
+            </div>
+            <div class="timeline-item strong-item">
+              <div class="time-dot"></div>
+              <div>
+                <h4>UADE - Universidad Argentina de la Empresa</h4>
+                <p class="meta" data-i18n="educationMeta">Ingeniería Informática | 2022 - Actualidad</p>
+                <ul id="educationBullets">
+                  <li>Estudiante de 5.º año / último año de la carrera.</li>
+                  <li>43 de 52 materias aprobadas. Graduación estimada: 2026.</li>
+                  <li>Título intermedio universitario en trámite.</li>
+                </ul>
+              </div>
+            </div>
+          </article>
+
+          <article class="section-block">
+            <div class="section-heading">
+              <span class="section-kicker" data-i18n="projectsKicker">Experiencia aplicada</span>
+              <h3 data-i18n="projectsTitle">Experiencia y proyectos</h3>
+            </div>
+            <div class="timeline" id="projectsList">
+              <div class="timeline-item">
+                <div class="time-dot"></div>
+                <div>
+                  <h4>Proyecto freelance - Sistema para florería con e-commerce, gestión interna y eventos</h4>
+                  <p class="meta">Java · Spring Boot · Kafka · Keycloak/JWT · Mercado Pago · Hostinger VPS</p>
+                  <ul>
+                    <li>Diseño y desarrollo de una solución con módulos de e-commerce, ventas locales, gestión de productos/stock, envíos, analítica y core de mensajería.</li>
+                    <li>Implementación backend con comunicación basada en eventos, autenticación/autorización y separación entre venta online y operación interna del local.</li>
+                    <li>Gestión de tareas con enfoque Kanban y despliegue en VPS para reducir costos de infraestructura.</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <div class="time-dot"></div>
+                <div>
+                  <h4>UniCamart - E-commerce tecnológico con arquitectura event-driven</h4>
+                  <p class="meta">Java 21 · Spring Boot · MySQL · React · TypeScript · Tailwind CSS · Kafka</p>
+                  <ul>
+                    <li>Proyecto académico de mayor escala basado en módulos/microservicios: landing de compra, CRM de productos y stock, analytics, core de mensajería y middleware receptor de eventos.</li>
+                    <li>Participación en backend, frontend, base de datos, gestión de eventos con Kafka y validación de emisores mediante Keycloak/tokens.</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <div class="time-dot"></div>
+                <div>
+                  <h4>App mobile de turnos médicos</h4>
+                  <p class="meta">Java 17 · Spring Boot · MySQL · React Native · Expo · JWT</p>
+                  <ul>
+                    <li>Aplicación móvil para gestión de turnos médicos con backend REST y frontend mobile.</li>
+                    <li>Uso de autenticación JWT, TypeScript, Tailwind CSS y arquitectura orientada a separación frontend/backend.</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <div class="time-dot"></div>
+                <div>
+                  <h4>Marketplace de instrumentos musicales</h4>
+                  <p class="meta">Java · Spring Boot · MySQL · JWT · React · Insomnia/Postman</p>
+                  <ul>
+                    <li>E-commerce académico con backend, frontend y base de datos relacional para productos, usuarios, compras y autenticación.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="section-block thesis-block">
+            <div class="section-heading">
+              <span class="section-kicker" data-i18n="thesisKicker">Investigación</span>
+              <h3 data-i18n="thesisTitle">Proyecto de tesis en curso</h3>
+            </div>
+            <div class="thesis-card">
+              <h4 data-i18n="thesisName">Modelo de inteligencia artificial aplicado a imágenes médicas de columna lumbar</h4>
+              <p data-i18n="thesisText">
+                Investigación orientada al procesamiento de resonancias magnéticas y radiografías mediante datasets públicos, detección de anomalías y generación de preinformes de apoyo para profesionales de radiología. Alcance ingenieril: limpieza y transformación de datos, entrenamiento en la nube, backend/frontend de soporte y visualización 3D de hallazgos.
+              </p>
+            </div>
+          </article>
+        </section>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
